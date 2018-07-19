@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.categories {
+    width: 100%;
+    text-align: right;
+    display: flex;
+
+}
+
+.navTop {
+    float: right;
+    text-align: right;
+    padding: 10px 10px 0 0;
+    margin-right: 10px;
+    
+}
+
+.navTop a,
+.navTop a:link,
+.navTop a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.navTop a:hover{
+    text-decoration: underline;
+}
+
+.navTop button {
+    border-color: lightsalmon;
+    color: lightsalmon;    
+    padding: 5px 5px;
+    background-color: whitesmoke;  
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+

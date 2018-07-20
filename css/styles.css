@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
+    --basicColor: lightsalmon;
 }
 
 .categories {
     width: 100%;
-    text-align: right;
     display: flex;
+    float: left;
 
 }
 
@@ -29,8 +30,8 @@
 }
 
 .navTop button {
-    border-color: lightsalmon;
-    color: lightsalmon;    
+    border-color: var(--basicColor);
+    color: var(--basicColor);    
     padding: 5px 5px;
     background-color: whitesmoke;  
 }

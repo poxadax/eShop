@@ -3,17 +3,24 @@
     --basicColor: lightsalmon;
 }
 
-.categories {
-    width: 100%;
-    display: flex;
-    float: left;
+.categories ul {
+    margin-top: 70px;
+    list-style: none;
+}
 
+.categories li {  
+    list-style-type:none; 
+    display:inline-block; }
+
+header {
+    display: inline-block;
+    width: 100%;
 }
 
 .navTop {
     float: right;
     text-align: right;
-    padding: 10px 10px 0 0;
+    margin-top: 10px;
     margin-right: 10px;
     
 }
@@ -36,9 +43,8 @@
     background-color: whitesmoke;  
 }
 
-.search {
-    display: flex;
-    flex-direction: row;
+.search div {
+    float: left;
     margin-left: 10px;
 }
 

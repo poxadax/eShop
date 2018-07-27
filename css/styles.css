@@ -3,26 +3,101 @@
     --basicColor: lightsalmon;
 }
 
-.categories ul {
-    margin-top: 70px;
+.categories {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     list-style: none;
+    margin-top: 50px;    
+    clear: both;
 }
 
 .categories li {  
     list-style-type:none; 
-    display:inline-block; }
+    padding: 5px 25px;
+}
+
+.categories a,
+.categories a:link,
+.categories a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.categories a:hover{
+    text-decoration: underline;
+}
 
 header {
     display: inline-block;
     width: 100%;
 }
 
+
+footer {
+    max-height: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid lightgrey;
+    padding: 10px;
+}
+
+footer span {
+    font-style: italic;
+
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+.freeShip img {
+    width: 600px;
+    height: 300px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 19px;
+}
+
+.list {
+    margin-top: 80px;
+    list-style-type: none;
+    columns: 3;
+    clear: both;
+    position: relative;    
+}
+
+
+.personalized {
+    margin-top: 20px; 
+    margin-left: 14px;
+    padding: 35px 245px;
+    border: none;
+    background-color: #26547c;
+    color: white;
+}
+
+.navBottom {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+
 .navTop {
     float: right;
-    text-align: right;
-    margin-top: 10px;
     margin-right: 10px;
-    
+    margin-top: 10px;
+    text-align: right;
+    clear: right;
 }
 
 .navTop a,
@@ -37,14 +112,72 @@ header {
 }
 
 .navTop button {
-    border-color: var(--basicColor);
+    background-color: white;
     color: var(--basicColor);    
-    padding: 5px 5px;
-    background-color: whitesmoke;  
+    padding: 5px 5px;    
+    border: 1px solid var(--basicColor);
 }
 
-.search div {
+.remark {
+    padding: 10px;    
+}
+.remark img {
+    width: 100px;
+    height: 100px;
+}
+
+.remark figure {
+    display: inline-block;
+    width: 120px;
+}
+
+.remark figure figcaption p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.search {
     float: left;
     margin-left: 10px;
+    margin-top: 10px;
+    clear: left;
+}
+
+.slider {
+    margin-right: 20px;
+    list-style-type: none;
+    float: left;
+}
+
+.slider img {
+    width: 700px;
+}
+.slide {
+    display: none;
+}
+
+.top a {
+    float: right;
+}
+
+.visible {
+    display: block;
+}
+
+.menu {
+    display: flex;
+}
+.submenu {
+    display: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 0;
 }
 

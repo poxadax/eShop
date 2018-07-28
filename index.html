@@ -1,15 +1,294 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Proyecto Final</title>
-    favicon ??? ?????
+    <title>eShop</title>
+    <link href="img/favicon.png" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header>
+        <div class="search">
+            eShop <input type="text"> <button type="button" name="">Search</button>
+        </div>
+
+        <nav class="navTop">
+                <a href="#">Sell on eShop</a>
+                <a href="#">Register</a>
+                <button type="button">Sign in</button>
+                <button type="button">Favorites</button>
+                <button type="button">Cart</button>  
+        </nav>
+
+        <nav class="categories">
+            <ul class="menu">
+                <li> <a href="#">Jewelry &amp; Accesories</a>
+                    <ul class="submenu">
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">BAGS &amp; PURSES</a></li>
+                        <li><a href="#">NECKLACES</a></li>
+                        <li><a href="#">RINGS</a></li>
+                        <li><a href="#">EARRINGS</a></li>
+                        <li><a href="#">BRACELETS</a></li>   
+                        <li><a href="#">BODY JEWERLY</a></li>                                             
+                    </ul>
+                </li>     
+                <li> <a href="#">Clothing &amp; Shoes</a>
+                    <ul class="submenu">
+                        <li><a href="#">WOMEN’S</a></li>
+                        <li><a href="#">MEN’S</a></li>
+                        <li><a href="#">KID’S &amp; BABY</a></li>
+                        <li><a href="#">BAGS &amp; PURSES</a></li>                                           
+                    </ul>
+                </li>
+                <li> <a href="#">Home &amp; Living</a>
+                    <ul class="submenu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">BATH &amp; BEAUTY</a></li>
+                        <li><a href="#">PET SUPPLIES</a></li>                                        
+                    </ul>
+                </li> 
+                <li> <a href="#">Wedding &amp; Party</a>
+                <ul class="submenu">
+                        <li><a href="#">PARTY SUPPLIES</a></li>
+                        <li><a href="#">INVITATIONS &amp; PAPER</a></li>
+                        <li><a href="#">WEDDING DECORATIONS</a></li>
+                        <li><a href="#">WEDDING GIFTS</a></li>
+                        <li><a href="#">WEDDING ACCESSORIES</a></li>
+                        <li><a href="#">WEDDING CLOTHING</a></li>   
+                        <li><a href="#">WEDDING JEWERLY</a></li>                                             
+                    </ul>
+                </li>
+                <li> <a href="#">Toys &amp; Entertainment</a>
+                    <ul class="submenu">
+                        <li><a href="#">TOYS</a></li>
+                        <li><a href="#">ELECTRONICS &amp; ACCESSORIES</a></li>
+                        <li><a href="#">BOOKS</a></li>
+                        <li><a href="#">MOVIES &amp; MUSIC</a></li>                                           
+                    </ul>
+                </li> 
+                <li> <a href="#">Art &amp; Collectibles</a>
+                    <ul class="submenu">
+                        <li><a href="#">PRINTS</a></li>
+                        <li><a href="#">PHOTOGRAPHY</a></li>
+                        <li><a href="#">PAINTING</a></li>
+                        <li><a href="#">SCULPTURE</a></li>  
+                        <li><a href="#">COLLECTIBLES</a></li>                                           
+                    </ul>
+                </li>
+                <li> <a href="#">Craft Supplies &amp; Tools</a>
+                    <ul class="submenu">
+                        <li><a href="#">HOME &amp; HOBBY</a></li>
+                        <li><a href="#">SEWING &amp; FIBER</a></li>
+                        <li><a href="#">PAPERCRAFT</a></li>
+                        <li><a href="#">VISUAL ARTS</a></li>  
+                        <li><a href="#">SCULPTING &amp; FORMING </a></li>                                           
+                    </ul>
+                </li>
+                <li> <a href="#">Vintage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+                <ul id= 'Slider' class="slider">
+                    <li class="slide visible"><img src="img/image1.jpg" alt=""></li>
+                    <li class="slide"><img src="img/image2.jpg" alt=""></li>
+                    <li class="slide"><img src="img/image3.jpg" alt=""></li>
+                    <button type="button" class="prev">Previous</button>
+                    <button type="button" class="next">Next</button>
+                </ul>
+                         
+                <div>
+                    <img src="img/image4.jpg" alt="">                
+                    <button type="button" class="personalized">Personalized Gifts ></button>                      
+                </div>
+                    
+        </section>
+        
+        <section class="secondSection">
+            <ul>
+                <li><h5>Unique everything</h5>We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want).</li>
+                <li><h5>Independent sellers</h5>Buy directly from someone who put their heart and soul into making something special.</li>
+                <li><h5>Secure shopping</h5>We use best-in-class technology to protect your transactions.</li>
+            </ul>
+        </section>
+         
+        <h3>Popular right now</h3>
+        <section class="remark">
+            
+            <figure>
+                <img src="img/image5.jpg" alt="Figura">
+                <figcaption>
+                    <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                    <span>TheFarWoods</span>
+                    <span>***** (960)</span>
+                    <span>MN$395.26</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image6.jpg" alt="Figura">
+                <figcaption>
+                    <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                    <span>TheFarWoods</span>
+                    <span>***** (960)</span>
+                    <span>MN$395.26</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image7.jpg" alt="Figura">
+                <figcaption>
+                    <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                    <span>TheFarWoods</span>
+                    <span>***** (960)</span>
+                    <span>MN$395.26</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image8.jpg" alt="Figura">
+                <figcaption>
+                    <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                    <span>TheFarWoods</span>
+                    <span>***** (960)</span>
+                    <span>MN$395.26</span>
+                </figcaption>
+            </figure> 
+            <figure>
+                <img src="img/image9.jpg" alt="Figura">
+                <figcaption>
+                    <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                    <span>TheFarWoods</span>
+                    <span>***** (960)</span>
+                    <span>MN$395.26</span>
+                </figcaption>
+            </figure>
+            
+            <figure>
+                <img src="img/image10.jpg" alt="Figura">
+                <figcaption>
+                    <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                    <span>TheFarWoods</span>
+                    <span>***** (960)</span>
+                    <span>MN$395.26</span>
+                </figcaption>
+            </figure>    
+        </section>
+
+        <h3>Shop for gifts</h3>    
+        <section class="remark">            
+            <figure>
+                <img src="img/image11.jpg" alt="Figura">
+                <figcaption>
+                    <span>Aniversary gifts</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image12.jpg" alt="Figura">
+                <figcaption>
+                    <span>Gifts for him</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image13.jpg" alt="Figura">
+                <figcaption>
+                    <span>Gifts for her</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image14.jpg" alt="Figura">
+                <figcaption>
+                    <span>Personalized gifts ideas</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image15.jpg" alt="Figura">
+                <figcaption>
+                    <span>Wedding gifts</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image16.jpg" alt="Figura">
+                <figcaption>
+                    <span>Housewarming gifts</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="thirdSection">
+            <h3>Etsy keeps you safe</h3>
+            <ul>
+                <li><h5>Trustworthy sellers</h5>You can read their reviews and policies, and contact them with any questions</li>
+                <li><h5>World-class security</h5>Safeguarding your information is the top priority of our dedicated security experts</li>
+                <li><h5>Purchase protection</h5>If anything goes wrong, our global support team has got your back</li>
+            </ul>
+        </section>
+           
+        <h3>Recent reviews from happy people</h3>
+        <section class="reviews">
+            <figure>
+                <img src="img/image17.jpg" alt="Figura">
+                <figcaption>
+                    <span>HuskyGirl wrote on July 22</span>
+                    <span>*****</span>
+                    <p>Thank you so much for an amazing (customized!) product! It was easy to install and looks BEAUTIFUL! </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image18.jpg" alt="Figura">
+                <figcaption>
+                    <span>macbear1 wrote on July 20 </span>
+                    <span>*****</span>
+                    <p>Great lunch bag for my niece who is a Boston nurse. Many thanks. </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/image19.jpg" alt="Figura">
+                <figcaption>
+                    <span>Kate wrote on July 18 </span>
+                    <span>*****</span>
+                    <p>The gift wrap has a great pattern, color and texture - exactly how I pictured it. Thank you! </p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="fourthSection">
+            <h3>Start Selling on Etsy</h3>
+            <span>Millions of shoppers can't wait to see what you have in your store.</span>
+            <a href="#">Open a shop today</a>    
+        </section>
+
+        <section class="fifthSection">
+            <h3>What is Etsy?</h3>
+            <span>We are more than a marketplace.</span>
+            <a href="#">Read all about it</a>
+        </section>
+                    
+
+        <section class="sixthSection">
+            <h5>Get fresh Etsy trends and unique gift ideas delivered right to your inbox.</h5>
+            <div>
+                <input type="text"><button type="button">Suscribe</button>
+            </div>
+        </section>
+                    
+    </main>
+
+    <footer>
+        <span>eShop We make it easy to find your thing</span>
+        
+        <nav class="navBottom">
+            <span>© 2018 eShop, Inc</span>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Interested based-ads</a>
+        </nav>
+
+    </footer>
+
+
+    <script src="js/slider.js"></script>
+    <script src="js/events.js"></script>
 </body>
 </html>

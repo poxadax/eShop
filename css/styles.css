@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    --basicColor: #ff883e;
+}
+
+.categories {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    list-style: none;
+    margin-top: 50px;    
+    clear: both;
+}
+
+.categories li {  
+    list-style-type:none; 
+    padding: 5px 25px;
+}
+
+.categories a,
+.categories a:link,
+.categories a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.categories a:hover{
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+
+footer {
+    max-height: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid lightgrey;
+    padding: 10px;
+}
+
+footer span {
+    font-style: italic;
+
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+.firstSection div img {    
+    float: right;
+    margin-right: 50px;
+    margin-top: 19px;
+    width: 600px;
+    height: 300px;
+}
+
+
+.firstSection div button {
+    margin-top: 20px; 
+    margin-right: 50px;
+    padding: 35px 245px;
+    border: none;
+    background-color: #26547c;
+    color: white;
+    float: right;
+}
+
+.secondSection ul,
+.thirdSection ul {
+    list-style-type: none;
+    columns: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-left: -15px;
+}
+
+.thirdSection, 
+.fifthSection {
+    background-color: var(--basicColor);
+    color: whitesmoke;
+    padding: 50px;
+}
+
+.fourthSection {
+    margin-bottom: 50px;
+    background-color: #ffac62;
+    color: whitesmoke;
+    padding: 50px;
+} 
+
+
+
+.fourthSection span,
+.fourthSection a,
+.fifthSection span,
+.fifthSection a,
+.sixthSection {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navBottom {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+
+.navTop {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.navTop a,
+.navTop a:link,
+.navTop a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.navTop a:hover{
+    text-decoration: underline;
+}
+
+.navTop button {
+    background-color: white;
+    color: var(--basicColor);    
+    padding: 5px 5px;    
+    border: 1px solid var(--basicColor);
+}
+
+.remark {
+    padding: 10px;    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.remark img {
+    width: 150px;
+    height: 150px;
+}
+
+.remark figure {
+    
+    width: 150px;
+}
+
+.remark figure figcaption span {
+    display: block;
+} 
+
+.remark figure figcaption p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+
+.reviews {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.reviews figure figcaption span,
+.reviews figure figcaption p {
+    display: block;
+} 
+
+.search {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.slider {
+    margin-right: 20px;
+    list-style-type: none;
+    float: left;
+}
+
+.slider img {
+    width: 700px;
+}
+.slide {
+    display: none;
+}
+
+.top a {
+    float: right;
+}
+
+.visible {
+    display: block;
+}
+
+.menu {
+    display: flex;
+}
+.submenu {
+    display: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 0;
+}
+

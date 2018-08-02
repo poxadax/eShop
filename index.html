@@ -16,7 +16,7 @@
 
         <nav class="navTop">
                 <a href="#">Sell on eShop</a>
-                <a href="#">Register</a>
+                <a href="#creatAccount">Register</a>
                 <button type="button">Sign in</button>
                 <button type="button">Favorites</button>
                 <button type="button">Cart</button>  
@@ -93,7 +93,7 @@
     </header>
     <main>
         <section class="firstSection">
-                <ul id= 'Slider' class="slider">
+                <ul id="Slider" class="slider">
                     <li class="slide visible"><img src="img/image1.jpg" alt=""></li>
                     <li class="slide"><img src="img/image2.jpg" alt=""></li>
                     <li class="slide"><img src="img/image3.jpg" alt=""></li>
@@ -103,7 +103,7 @@
                          
                 <div>
                     <img src="img/image4.jpg" alt="">                
-                    <button type="button" class="personalized">Personalized Gifts ></button>                      
+                    <button type="button" class="personalized">Personalized Gifts   &#x276F;</button>                      
                 </div>
                     
         </section>
@@ -286,9 +286,36 @@
         </nav>
 
     </footer>
-
+    <div id="creatAccount" class="register">
+            <div>
+                <h3>Create your account</h3>
+                <span>Registration is easy.</span> 
+                <form id="register-form" action="#" method="post" novalidate autocomplete="off">
+                    <div class="center">
+                        <label for="mail"><h4>Email address*</h4></label>
+                        <input type="email" name="mail" id="mail" placeholder="user@mail.com" >
+                    </div>
+                    <div class="center">
+                        <label for="name"><h4>First name*</h4></label>
+                        <input type="name" name="name" id="name">
+                    </div>
+    
+                    <div class="center">
+                        <label for="password"><h4>Password*</h4></label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <button type="submit">Register</button>  
+                            OR
+                    <button>Continue with Google</button>
+                    <button>Continue with Facebook</button>
+                    <p>By clicking Register, Continue with Google, or Continue with Facebook, you agree to Etsy’s Terms of Use and Privacy Policy</p>  
+                    <a href="#close" title="Close" class="close">Cancel</a>      
+                </form>
+            </div>
+        </div>
 
     <script src="js/slider.js"></script>
     <script src="js/events.js"></script>
+    
 </body>
 </html>

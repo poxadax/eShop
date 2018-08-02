@@ -1,14 +1,26 @@
 * {
-    box-sizing: border-box;
+    --backgroundColor:  #ffac62;
+    --bannerColor: white;
     --basicColor: #ff883e;
+    --buttonColor: #26547c;
+    --categoriesBorderColor: lightgrey;
+    --footerFontSize: 15px;
+    --linkColor: black;
+    --secondBannerColor: whitesmoke;
+    --sectionFontSize: 20px;
+    --spanFontSize: 16px;
+    box-sizing: border-box;
+    
 }
 
+
+
 .categories {
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-    list-style: none;
-    margin-top: 50px;    
+    border-bottom: 1px solid var(--categoriesBorderColor);
+    border-top: 1px solid var(--categoriesBorderColor);
     clear: both;
+    list-style: none;
+    margin-top: 50px;        
 }
 
 .categories li {  
@@ -19,7 +31,7 @@
 .categories a,
 .categories a:link,
 .categories a:visited {
-    color: black;
+    color: var(--linkColor);
     text-decoration: none;
 }
 
@@ -38,11 +50,11 @@ header {
 
 
 footer {
-    max-height: 20px;
-    font-size: 15px;
-    margin-top: 20px;
+    border-top: 1px solid var(--categoriesBorderColor);
+    font-size: var(--footerFontSize);
     margin-bottom: 10px;
-    border-top: 1px solid lightgrey;
+    margin-top: 20px;
+    max-height: 20px;
     padding: 10px;
 }
 
@@ -54,7 +66,7 @@ footer span {
 footer a,
 footer a:link,
 footer a:visited {
-    color: black;
+    color: var(--linkColor);
     text-decoration: none;
 }
 
@@ -65,50 +77,47 @@ footer a:hover{
 
 .firstSection div img {    
     float: right;
+    height: 300px;
     margin-right: 50px;
     margin-top: 19px;
-    width: 600px;
-    height: 300px;
+    width: 600px;    
 }
 
 
 .firstSection div button {
-    margin-top: 20px; 
-    margin-right: 50px;
-    padding: 35px 245px;
+    background-color: var(--buttonColor);  
     border: none;
-    background-color: #26547c;
-    color: white;
+    color: var(--bannerColor);
     float: right;
+    margin-right: 50px;
+    margin-top: 20px; 
+    padding: 35px 245px;    
 }
 
 .secondSection ul,
-.thirdSection ul {
-    list-style-type: none;
-    columns: 3;
+.thirdSection ul {    
     display: grid;
+    font-size: var(--sectionFontSize);
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
+    list-style-type: none;
     margin-left: -15px;
+    text-align: center;
+    width: 100%; 
 }
 
 .thirdSection, 
 .fifthSection {
     background-color: var(--basicColor);
-    color: whitesmoke;
+    color: var(--secondBannerColor);
     padding: 50px;
 }
 
 .fourthSection {
+    background-color: var(--backgroundColor);
+    color: var(--secondBannerColor);
     margin-bottom: 50px;
-    background-color: #ffac62;
-    color: whitesmoke;
     padding: 50px;
 } 
-
-
 
 .fourthSection span,
 .fourthSection a,
@@ -116,13 +125,13 @@ footer a:hover{
 .fifthSection a,
 .sixthSection {
     display: block;
-    text-align: center;
-    font-size: 20px;
+    font-size: var(--sectionFontSize);
+    text-align: center;    
 }
 
 .navBottom {
+    color: var(--bannerColor);
     float: right;
-    color: white;
     text-decoration: none;
 }
 
@@ -137,7 +146,7 @@ footer a:hover{
 .navTop a,
 .navTop a:link,
 .navTop a:visited {
-    color: black;
+    color: var(--linkColor);
     text-decoration: none;
 }
 
@@ -146,24 +155,23 @@ footer a:hover{
 }
 
 .navTop button {
-    background-color: white;
-    color: var(--basicColor);    
-    padding: 5px 5px;    
+    background-color: var(--bannerColor);
     border: 1px solid var(--basicColor);
+    color: var(--basicColor);    
+    padding: 5px 5px;        
 }
 
-.remark {
-    padding: 10px;    
+.remark {      
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    padding: 10px;  
 }
 .remark img {
-    width: 150px;
     height: 150px;
+    width: 150px;    
 }
 
 .remark figure {
-    
     width: 150px;
 }
 
@@ -172,10 +180,10 @@ footer a:hover{
 } 
 
 .remark figure figcaption p {
-    white-space: nowrap;
+    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: block;
+    white-space: nowrap;
 }
 
 
@@ -195,9 +203,9 @@ footer a:hover{
 }
 
 .slider {
-    margin-right: 20px;
-    list-style-type: none;
     float: left;
+    list-style-type: none;
+    margin-right: 20px;    
 }
 
 .slider img {
@@ -223,9 +231,76 @@ footer a:hover{
 }
 
 .menu li:hover .submenu {
+    background-color: var(--bannerColor);
     display: block;
-    position: absolute;
-    background-color: white;
     padding: 0;
+    position: absolute;
 }
 
+span {
+    font-size: var(--spanFontSize);
+    text-align: left;    
+}
+
+
+
+.register {
+    background-color: var(--backgroundColor);    
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 400ms ease-in;
+    z-index: 99999;
+ }
+
+ .register:target {
+    opacity: 1;
+    pointer-events: auto;
+ }
+
+ .register > div {
+    background: white;
+    border-radius: 10px;
+    color: black;
+    margin: 3% auto;
+    padding: 5px 20px 13px 20px;
+    position: relative;
+    transition: opacity 400ms ease-in;
+    width: 400px;
+ }
+ .close {
+    color: darkgrey;
+    text-decoration: none;
+ }
+ .close:hover {
+    color: red;
+    text-decoration: underline;
+ }
+ .registerlabel {
+    display: inline-block;
+    padding: 7px 0;
+ }
+ .center {
+    margin: auto;
+    padding: 4px;
+    width: 70%;
+ }
+ .center button {
+ left: 44%;
+ position: relative;
+ }
+ 
+ .center input {
+    padding: 5px;
+    width: 100%;
+ }
+
+ .register input,
+ .register select {
+    display: block;
+ }

@@ -46,43 +46,43 @@
   "products": [
     {
       "photo": "image5.jpg",
-      "name": "Garden Journal: Three Year Daily Planner",
-      "brand": "TheFarWoods",
+      "name": "Garden Journal",
+      "brand": "The Far Woods",
       "reviews": "***** (960)",
       "price": "MN$395.26"
     },
     {
         "photo": "image6.jpg",
-        "name": "A5 Planner - 2018-2019 Planner",
-        "brand": "SimplyNotebooks",
+        "name": "A5 Planner",
+        "brand": "Simply Notebooks",
         "reviews": "***** (988)",
         "price": "MN$336.32"
     },
     {
         "photo": "image7.jpg",
         "name": "Dinosaur Animal Play Set",
-        "brand": "ArksAndAnimals",
+        "brand": "Arks And Animals",
         "reviews": "***** (2,745)",
         "price": "MN$573.22"
     },
     {
         "photo": "image8.jpg",
-        "name": "Handmade leather dog collar",
-        "brand": "FarMorCollective",
+        "name": "Leather Dog Collar",
+        "brand": "Far Mor Collective",
         "reviews": "***** (91)",
         "price": "MN$443.16"
     },
     {
         "photo": "image9.jpg",
         "name": "Set of 3 Prints",
-        "brand": "HEARTSinCOLORS",
+        "brand": "HEARTS in COLORS",
         "reviews": "***** (320)",
         "price": "MN$287.67"
     },
     {
         "photo": "image10.jpg",
         "name": "Boho Wall Hanging",
-        "brand": "wreathyblues",
+        "brand": "Wreathy Blues",
         "reviews": "***** (13)",
         "price": "MN$385.36"
     }

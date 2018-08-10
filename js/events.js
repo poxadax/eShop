@@ -34,7 +34,7 @@ formNode.addEventListener('submit', function(e){
     
 
     const myRequest = new Request(
-        'http://localhost:3000/users',
+        'https://my-json-server.typicode.com/poxadax/eshop/users',
         {
             method: 'POST',
             body: JSON.stringify(data),
@@ -61,14 +61,14 @@ formNode.addEventListener('submit', function(e){
 
 async function getPopularProducts(){
     // Enviar la informacion al API
-    const myRequest = new Request(
-        'http://localhost:3000/products',
+    const reqProducts = new Request(
+        'https://my-json-server.typicode.com/poxadax/eshop/products', // Cambiar por tu propia API
         {
             method: 'GET'
         }
     );
 
-    let response = await fetch(myRequest)
+    let response = await fetch(reqProducts)
     .then((response) => {
         if (response.status === 200) {
             return response.json();
@@ -78,44 +78,32 @@ async function getPopularProducts(){
     })
     .then((response) => {
         return response;
-    }).catch(error => {
+    }).catch((error) => {
         console.error(error);
     });
 
     return response;
 }
 
-async function renderProducts(){
+async function renderProducts() {
     let products = await getPopularProducts();
-    console.log(products);
+
+    let popularProductsNode = document.getElementById('popular');
+    let articleNode = document.querySelector('#popular article');
+    articleNode.remove();
 
     products.forEach((product) => {
-        console.log(product);
-        let popularProductsNode = document.getElementById('popular-products');
-        let articleNode = document.createElement('article');
-        let contentNode = document.createElement('div');
+        let newArticle = articleNode.cloneNode(true);
+        newArticle.children[0].src = 'img/' + product.photo;
+        newArticle.children[1].children[0].innerText = product.name;
+        newArticle.children[1].children[1].innerText = product.brand;
+        newArticle.children[1].children[2].innerText = product.reviews;
+        newArticle.children[1].children[4].innerText = product.price;
 
-        // Foto
-        let imageNode = document.createElement('img');
-        imageNode.src = 'img/' + product.photo;
-        imageNode.alt = product.name;
-
-        // Nombre
-        let titleNode = document.createElement('h2');
-        let textNode = document.createTextNode(product.name);
-        titleNode.appendChild(textNode);
-
-        // Marca
-        let brandNode = document.createElement('p');
-        let brandTextNode = document.createTextNode(product.brand);
-        brandNode.appendChild(brandTextNode);
-
-        contentNode.appendChild(titleNode);
-        articleNode.appendChild(imageNode);
-        articleNode.appendChild(contentNode);
-
-        popularProductsNode.appendChild(articleNode);
+        popularProductsNode.appendChild(newArticle);
     });
 }
+
+
 
 renderProducts();

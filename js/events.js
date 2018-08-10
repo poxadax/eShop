@@ -95,11 +95,12 @@ async function renderProducts() {
     products.forEach((product) => {
         let newArticle = articleNode.cloneNode(true);
         newArticle.children[0].src = 'img/' + product.photo;
+        /*-
         newArticle.children[1].children[0].innerText = product.name;
         newArticle.children[1].children[1].innerText = product.brand;
         newArticle.children[1].children[2].innerText = product.reviews;
         newArticle.children[1].children[4].innerText = product.price;
-
+-*/
         popularProductsNode.appendChild(newArticle);
     });
 }

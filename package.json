@@ -1,0 +1,27 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poxadax/eShop.git"
+  },
+  "author": "Ramón Posadas Martínez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poxadax/eShop/issues"
+  },
+  "homepage": "https://github.com/poxadax/eShop#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

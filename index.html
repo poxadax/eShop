@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,38 +6,324 @@
     <link href="img/favicon.png" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
+    
     <header>
-        <div>
-            <h1>eShop</h1>
-            <input type="text">
-            <button type="button" name="button">Search</button>
+        <div class="search">
+           <span>eShop</span> 
+           <input type="search"> 
+           <button type="button">Search</button>
         </div>
 
-        <div>
-            
-                <a href="#">Sell on Etsy</a>
-                <a href="#">Register</a>
-                <button type="button" name="button">Sign in</button>
-                <button type="button" name="button">Cart</button>
-          
-        </div>
-
-        <nav>
-            <ul>
-                <li> <a href="#">Jewelry &amp; Accesories</a></li> 
-                <li> <a href="#">Clothing &amp; Shoes</a></li>
-                <li> <a href="#">Home &amp; Living</a></li> 
-                <li> <a href="#">Wedding &amp; Party</a></li>
-                <li> <a href="#">Toys &amp; Entertainment</a></li> 
-                <li> <a href="#">Art &amp; Collectibles</a></li>
-                <li> <a href="#">Craft Supplies &amp; Tools</a></li>
-                <li> <a href="#">Vintage</a></li>
-                
-            </ul>
+        <nav class="navTop"> 
+            <a href="#">Sell on eShop</a>
+            <a href="#creatAccount">Register</a>
+            <button type="button" class="btn">Sign in</button>
+            <button type="button" class="btn">Favorites</button>
+            <button type="button" class="btn">Cart</button>  
         </nav>
 
+        <nav class="categories">
+            <ul class="menu">
+                <li> <a href="#">Jewelry &amp; Accesories</a>
+                    <ul class="submenu">
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">BAGS &amp; PURSES</a></li>
+                        <li><a href="#">NECKLACES</a></li>
+                        <li><a href="#">RINGS</a></li>
+                        <li><a href="#">EARRINGS</a></li>
+                        <li><a href="#">BRACELETS</a></li>   
+                        <li><a href="#">BODY JEWERLY</a></li>                                             
+                    </ul>
+                </li>     
+                <li> <a href="#">Clothing &amp; Shoes</a>
+                    <ul class="submenu">
+                        <li><a href="#">WOMEN’S</a></li>
+                        <li><a href="#">MEN’S</a></li>
+                        <li><a href="#">KID’S &amp; BABY</a></li>
+                        <li><a href="#">BAGS &amp; PURSES</a></li>                                           
+                    </ul>
+                </li>
+                <li> <a href="#">Home &amp; Living</a>
+                    <ul class="submenu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">BATH &amp; BEAUTY</a></li>
+                        <li><a href="#">PET SUPPLIES</a></li>                                        
+                    </ul>
+                </li> 
+                <li> <a href="#">Wedding &amp; Party</a>
+                <ul class="submenu">
+                        <li><a href="#">PARTY SUPPLIES</a></li>
+                        <li><a href="#">INVITATIONS &amp; PAPER</a></li>
+                        <li><a href="#">WEDDING DECORATIONS</a></li>
+                        <li><a href="#">WEDDING GIFTS</a></li>
+                        <li><a href="#">WEDDING ACCESSORIES</a></li>
+                        <li><a href="#">WEDDING CLOTHING</a></li>   
+                        <li><a href="#">WEDDING JEWERLY</a></li>                                             
+                    </ul>
+                </li>
+                <li> <a href="#">Toys &amp; Entertainment</a>
+                    <ul class="submenu">
+                        <li><a href="#">TOYS</a></li>
+                        <li><a href="#">ELECTRONICS &amp; ACCESSORIES</a></li>
+                        <li><a href="#">BOOKS</a></li>
+                        <li><a href="#">MOVIES &amp; MUSIC</a></li>                                           
+                    </ul>
+                </li> 
+                <li> <a href="#">Art &amp; Collectibles</a>
+                    <ul class="submenu">
+                        <li><a href="#">PRINTS</a></li>
+                        <li><a href="#">PHOTOGRAPHY</a></li>
+                        <li><a href="#">PAINTING</a></li>
+                        <li><a href="#">SCULPTURE</a></li>  
+                        <li><a href="#">COLLECTIBLES</a></li>                                           
+                    </ul>
+                </li>
+                <li> <a href="#">Craft Supplies &amp; Tools</a>
+                    <ul class="submenu">
+                        <li><a href="#">HOME &amp; HOBBY</a></li>
+                        <li><a href="#">SEWING &amp; FIBER</a></li>
+                        <li><a href="#">PAPERCRAFT</a></li>
+                        <li><a href="#">VISUAL ARTS</a></li>  
+                        <li><a href="#">SCULPTING &amp; FORMING </a></li>                                           
+                    </ul>
+                </li>
+                <li> <a href="#">Vintage</a></li>
+            </ul>
+        </nav>
     </header>
+    <div class="container">
+    <main>
+        <section class="columns-2">
+               
+            <ul id="Slider" class="slider">
+                <li class="slide visible"><img src="img/image1.jpg" alt=""></li>
+                <li class="slide"><img src="img/image2.jpg" alt=""></li>
+                <li class="slide"><img src="img/image3.jpg" alt=""></li>
+                <button type="button" class="prev">Previous</button>
+                <button type="button" class="next">Next</button>
+            </ul>
+              
+            <div class="personalized">
+                <img src="img/image4.jpg" alt="">                
+                <button type="button" >Personalized Gifts   &#x276F;</button>                      
+            </div>
+                    
+        </section>
+        
+        <section class="values columns-3">
+            <div>
+                <h2>Unique everything</h2>
+                <p>We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want).</p>                
+            </div>
+
+            <div>
+                <h2>Independent sellers</h2>
+                <p>Buy directly from someone who put their heart and soul into making something special.</p>
+            </div>   
+            
+            <div>
+                <h2>Secure shopping</h2>
+                <p>We use best-in-class technology to protect your transactions.</p>
+            </div>
+
+        </section>
+         
+        
+        <section class="products">
+                <h3>Popular right now</h3>
+                <div class="columns-6">
+                        <article>
+                            <img src="img/image5.jpg" alt="Figura">
+                            <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                            <span>TheFarWoods</span>
+                            <span>***** (960)</span>
+                            <span>MN$395.26</span>
+                        </article>
+                        
+                        <article>
+                            <img src="img/image6.jpg" alt="Figura">
+                                <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                                <span>TheFarWoods</span>
+                                <span>***** (960)</span>
+                                <span>MN$395.26</span>
+                        </article>
+                        <article>
+                            <img src="img/image7.jpg" alt="Figura">
+                                <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                                <span>TheFarWoods</span>
+                                <span>***** (960)</span>
+                                <span>MN$395.26</span>
+                        </article>
+                        <article>
+                            <img src="img/image8.jpg" alt="Figura">
+                                <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                                <span>TheFarWoods</span>
+                                <span>***** (960)</span>
+                                <span>MN$395.26</span>
+                        </article> 
+                        <article>
+                            <img src="img/image9.jpg" alt="Figura">
+                                <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                                <span>TheFarWoods</span>
+                                <span>***** (960)</span>
+                                <span>MN$395.26</span>
+                        </article>
+                        
+                        <article>
+                            <img src="img/image10.jpg" alt="Figura">
+                                <p>Garden Journal: Three Year Daily Planner Gardening Gift for Gardeners, Garden Book Garden Art Gift for Mom Gift Day Planner Gardener Gift</p>
+                                <span>TheFarWoods</span>
+                                <span>***** (960)</span>
+                                <span>MN$395.26</span>
+                        </article>
+                </div>    
+                
+        </section>
+   
+        <section class="products">    
+            <h3>Shop for gifts</h3>         
+            <div class="columns-6">
+                <article>
+                    <img src="img/image11.jpg" alt="Figura">
+                        <span>Aniversary gifts</span>
+                </article>
+                <article>
+                    <img src="img/image12.jpg" alt="Figura">
+                        <span>Gifts for him</span>
+                </article>
+                <article>
+                    <img src="img/image13.jpg" alt="Figura">
+                        <span>Gifts for her</span>
+                </article>
+                <article>
+                    <img src="img/image14.jpg" alt="Figura">
+                        <span>Personalized gifts ideas</span>
+                </article>
+                <article>
+                    <img src="img/image15.jpg" alt="Figura">
+                        <span>Wedding gifts</span>
+                </article>
+                <article>
+                    <img src="img/image16.jpg" alt="Figura">
+                        <span>Housewarming gifts</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="promises">
+            <h3>eShop keeps you safe</h3>
+            <div class="columns-3">
+                <div>
+                    <h2>Trustworthy sellers</h2>
+                    <p>You can read their reviews and policies, and contact them with any questions</p>                
+                </div>
+    
+                <div>
+                    <h2>World-class security</h2>
+                    <p>Safeguarding your information is the top priority of our dedicated security experts</p>
+                </div>   
+                
+                <div>
+                    <h2>Purchase protection</h2>
+                    <p>If anything goes wrong, our global support team has got your back</p>
+                </div>
+            </div>
+        </section>
+           
+        <section class="reviews">
+            <h3>Recent reviews from happy people</h3>
+            <div class="columns-3">
+            <article>
+                <img src="img/image17.jpg" alt="Figura">
+                    <p>HuskyGirl wrote on July 22</p>
+                    <p>*****</p>
+                    <p>Thank you so much for an amazing (customized!) product! It was easy to install and looks BEAUTIFUL! </p>
+            </article>
+            <article>
+                <img src="img/image18.jpg" alt="Figura">
+                    <p>macbear1 wrote on July 20 </p>
+                    <p>*****</p>
+                    <p>Great lunch bag for my niece who is a Boston nurse. Many thanks. </p>
+            </article>
+            <article>
+                <img src="img/image19.jpg" alt="Figura">
+                    <p>Kate wrote on July 18 </p>
+                    <p>*****</p>
+                    <p>The gift wrap has a great pattern, color and texture - exactly how I pictured it. Thank you! </p>
+            </article>
+            </div>
+        </section>
+
+        <section class="sell">
+            <h3>Start Selling on eShop</h3>
+            <p>Millions of shoppers can't wait to see what you have in your store.</p>
+            <a href="#">Open a shop today</a>    
+        </section>
+
+        <section class="what">
+            <h3>What is eShop?</h3>
+            <p>We are more than a marketplace.</p>
+            <a href="#">Read all about it</a>
+        </section>
+                    
+
+        <section class="suscribe">
+            <h5>Get fresh eShop trends and unique gift ideas delivered right to your inbox.</h5>
+            <div>
+                <input type="email"><button type="button">Suscribe</button>
+            </div>
+        </section>
+                    
+    </main>
+    
+    </div>
+    
+    <footer>
+        <span>eShop We make it easy to find your thing</span>
+        
+        <nav class="navBottom">
+            <span>© 2018 eShop, Inc</span>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Interested based-ads</a>
+        </nav>
+
+    </footer>
+
+    <div id="creatAccount" class="register">
+            <div>
+                <h3>Create your account</h3>
+                <span>Registration is easy.</span> 
+                <form id="register-form" action="#" method="post" novalidate autocomplete="off">
+                    <div class="center">
+                        <label for="mail"><h4>Email address*</h4></label>
+                        <input type="email" name="mail" id="mail" placeholder="user@mail.com" >
+                    </div>
+                    <div class="center">
+                        <label for="name"><h4>First name*</h4></label>
+                        <input type="name" name="name" id="name">
+                    </div>
+    
+                    <div class="center">
+                        <label for="password"><h4>Password*</h4></label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <button type="submit">Register</button>  
+                            OR
+                    <button>Continue with Google</button>
+                    <button>Continue with Facebook</button>
+                    <p>By clicking Register, Continue with Google, or Continue with Facebook, you agree to eShop’s Terms of Use and Privacy Policy</p>  
+                    <a href="#close" title="Close" class="close">Cancel</a>      
+                </form>
+            </div>
+        </div>
+
+    <script src="js/slider.js"></script>
+    <script src="js/events.js"></script>
+   
 </body>
 </html>

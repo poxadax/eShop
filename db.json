@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Michelle",
+      "email": "michelle@mail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Paco",
+      "email": "paco@mail.com",
+      "password": "132456"
+    },
+    {
+      "id": 3,
+      "name": "Jorge",
+      "email": "jorge@mail.com",
+      "password": "213456"
+    },
+    {
+      "id": 4,
+      "name": "Cristian",
+      "email": "cristian@mail.com",
+      "password": "123456"
+    },
+    {
+      "id": 5,
+      "name": "Andrea",
+      "email": "andrea@mail.com",
+      "password": "123465"
+    },
+    {
+      "id": 6,
+      "name": "Ramon",
+      "email": "ramon@mail.com",
+      "password": "124765"
+    },
+    {
+      "name": "",
+      "mail": "ff",
+      "password": "",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "sku": "947743084509",
+      "name": "Book",
+      "category": "",
+      "price": "",
+      "quantity": "",
+      "description": "",
+      "photo": ""
+    },
+    {
+      "sku": "44493939934",
+      "name": "Note",
+      "category": "",
+      "price": "",
+      "quantity": "",
+      "description": "",
+      "photo": ""
+    },
+    {
+      "sku": "949494003112",
+      "name": "",
+      "category": "",
+      "price": "",
+      "quantity": "",
+      "description": "",
+      "photo": ""
+    },
+    {
+      "sku": "4459694033",
+      "name": "",
+      "category": "",
+      "price": "",
+      "quantity": "",
+      "description": "",
+      "photo": ""
+    },
+    {
+      "sku": "1238834445",
+      "name": "",
+      "category": "",
+      "price": "",
+      "quantity": "",
+      "description": "",
+      "photo": ""
+    },
+    {
+      "sku": "12354609094",
+      "name": "",
+      "category": "",
+      "price": "",
+      "quantity": "",
+      "description": "",
+      "photo": ""
+    }
+  ]
+}
